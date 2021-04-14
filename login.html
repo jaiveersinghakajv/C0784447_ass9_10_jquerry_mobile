@@ -18,6 +18,15 @@
     </div>
     </form>
     <!--login form end-->
-    
 </body>
+<script>
+    function Validation() {
+        if (document.getElementById("Email").value == "admin@lcit.com") {
+            letsGo = true; if (document.getElementById("Password").value == "lcit123") {
+                goodtoGo = true;
+                document.getElementById("Submit").href = "home.html"
+            }
+        }
+    }
+</script>
 </html>

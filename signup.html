@@ -88,4 +88,37 @@
         </form>
         <!--signup end-->
 </body>
+<script>
+    function Validation() {
+        if (document.getElementById("e1").value == "") {
+            document.getElementById("e2").innerHTML = "You need to fill your email";
+            goodtoGo = false;
+        }
+        if (document.getElementById("f1").value == "") {
+            document.getElementById("f2").innerHTML = "You need to fill your first name";
+            goodtoGo = false;
+        }
+        if (document.getElementById("l1").value == "") {
+            document.getElementById("l2").innerHTML = "You need to fill your last name ";
+            goodtoGo = false;
+        }
+        if (document.getElementById("cp1").value == "") {
+            document.getElementById("cp2").innerHTML = "you need to fill your password again";
+            goodtoGo = false;
+        }
+        if (document.getElementById("p1").value == "") {
+            document.getElementById("p2").innerHTML = "You need to fill this your password";
+            goodtoGo = false;
+        }
+        if (document.getElementById("cp1").value != document.getElementById("p1").value) {
+            document.getElementById("cp2").innerHTML = "Please fill your password as above";
+            goodtoGo = false;
+        }
+
+        if (document.getElementById("b1").value == "") {
+            document.getElementById("b2").innerHTML = "You need to fill your birthdate";
+            goodtoGo = false;
+        }
+    }
+</script>
 </html>

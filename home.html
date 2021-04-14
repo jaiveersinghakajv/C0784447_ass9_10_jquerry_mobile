@@ -5,6 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <style>
+        .home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            padding: 2rem 10rem;
+        }
+
+        .home .video video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .home .content {
+            margin-top: 1rem;
+        }
+
+        .home .content h1 {
+            font-size: 6.1vw;
+            color: #fff;
+            text-shadow: 0 .3rem .5rem #000;
+        }
+
+        .home .content p {
+            font-size: 1.5vw;
+            color: #eee;
+            text-shadow: 0 .3rem .5rem #000;
+            padding-left: 2rem;
+            border-left: .3rem solid #ddd;
+        }
+
+        .sign {
+            width: 320px;
+            margin-top: 30px;
+            height: 55px;
+            background: #0062ff;
+            color: #fff;
+            font-size: 33px;
+            text-align: center;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            transition-property: border-left, border-right, box-shadow;
+        }
+
+        .sign:hover {
+            border-left: solid 8px rgba(0, 0, 0, 0.5);
+            border-right: solid 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 100px rgba(0, 98, 255, 0.8);
+        }
+    </style>
 </head>
 <body>
     <section class="home" id="home">
